@@ -1,0 +1,111 @@
+/* css reset - josh comeau */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* typography */
+
+* {
+    font-family: "DM Sans", serif;
+}
+
+/* padding and colors */
+body {
+    background-color: rgb(243, 249, 246);
+    padding: 2rem;
+}
+
+article {
+    background-color: rgba(7, 82, 35, 0.196);
+    border-radius: 30px;
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 60%;
+    box-shadow: 10px 10px;
+}
+@keyframes mymove {
+    50% {scale: 1.05 1.05;}
+}
+article:hover {
+    animation: mymove 2s;
+    
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h1:hover {
+    text-shadow: 10px 20px 30px rgb(19, 43, 32);
+}
+
+.light{
+    color: rgba(98, 110, 94, 0.694);
+}
