@@ -109,3 +109,8 @@ h1:hover {
 .light{
     color: rgba(98, 110, 94, 0.694);
 }
+
+a{
+    text-decoration: none;
+    color:  rgb(15, 17, 14);
+}
