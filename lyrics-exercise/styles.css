@@ -90,3 +90,11 @@
   .word:hover{
     animation: highlight 5s infinite;
   }
+
+  .left-side{
+    transition: transform .4s;
+  }
+
+  .left-side:hover{
+    transform: scale(1.1);
+  }
