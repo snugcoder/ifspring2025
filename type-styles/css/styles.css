@@ -1,0 +1,174 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    padding: 2rem;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+h1{
+    font-family: "Ubuntu", serif;
+    font-size: 4em;
+}
+.text .label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: initial;
+    font-weight: bold;
+}
+
+.text p {
+    font-family: "Ubuntu", serif;
+    font-size: 24px;
+}
+
+/* font-weight */
+.font-weight{
+    .lighter{
+        font-weight: 300;
+    }
+    .medium{
+        font-weight: 500;
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+}
+
+/* font-style */
+
+.font-style{
+
+    .italic{
+        font-style: italic;
+    }
+
+    .oblique{
+        font-style: oblique;
+    }
+}
+
+/* letter spacing */
+.letter-spacing{
+    .tight{
+        letter-spacing: -0.1em;
+    }
+
+    .wide{
+        letter-spacing: .3em;
+    }
+}
+
+/* text-decoration */
+.text-decor{
+    .line-through{
+        text-decoration: line-through;
+    }
+    .underline{
+        text-decoration: underline;
+    }
+    .overline{
+        text-decoration: overline;
+    }
+}
+
+/* text-transform */
+.text-transform{
+    .uppercase{
+        text-transform: uppercase;
+    }
+    .lowercase{
+        text-transform: lowercase;
+    }
+    .capitalize{
+        text-transform: capitalize;
+    }
+}
+
+/* layout styling */
+h3{
+    color: gray;
+    padding-bottom: 2rem;
+    font-size: 1.45rem;
+}
+header{
+    text-align: center;
+}
+main{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    /* align-content: center; */
+}
+.top-side, .bottom-side, .last-side{
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-content: center;
+    /* align-items: flex-end; */
+}
