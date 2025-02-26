@@ -1,0 +1,201 @@
+/* css reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ***** */
+
+html {
+    font-family: "Archivo Narrow", serif;
+}
+
+header {
+    /* background-color: rgba(255, 228, 196, 0.52); 
+    \\*/
+    background-image: url('../images/skyview.jpg');
+    padding: 166px 0 188px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 0 16px 0;
+    font-size: 60pt;
+    line-height: 1;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+}
+
+h3 {
+    line-height: 1;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 38px;
+}
+
+section {
+    padding-top: 48px;
+    max-width: 1500px;
+}
+
+section div.column {
+    width: 960px;
+    margin: auto;
+}
+
+section#intro {
+    background-color: rgba(245, 206, 148, 0.374);
+    padding-bottom: 2.46rem;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+section#intro img {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0 0 20px 38px;
+    border: 1px solid black;
+}
+
+section#intro p {
+    padding-bottom: 1rem;
+    padding-left: 1px;
+}
+
+section#photo-gallery {
+    background-color: rgba(165, 42, 42, 0.598);
+    padding-bottom: 4rem;
+}
+
+section#photo-gallery img {
+    width: 200px;
+    height: 150px;
+}
+
+section#photo-gallery .grid {
+    display: flex;
+    gap: .9rem;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    padding-right: 250px;
+    row-gap: 1.5rem;
+
+}
+
+section#photo-gallery .photo-card {
+    padding-right: 4px;
+    display: flex;
+    gap: .8rem;
+    line-height: 1.8;
+    width: 468px;
+}
+
+section#photo-gallery .photo-card .info {
+    width: 253px;
+}
+
+h4 {
+    font-size: 19.2px;
+}
+
+section#photo-gallery .photo-card p{
+    width: 85%;
+}
+
+section#paragraph{
+    background-color: rgba(255, 235, 205, 0.562);
+    padding-bottom: 6.3rem;
+}
+
+section#paragraph .column{
+    width: 703px;
+}
+section#paragraph p{
+    /* font-size: 2rem;
+    text-align: center;
+    padding:0 0 0 0; */
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.4;
+
+}
+
+footer .content{
+    padding-left: 15.1rem;
+    padding-top: 2rem;
+    line-height: 41px;
+    font-size: 1.1rem;
+}
