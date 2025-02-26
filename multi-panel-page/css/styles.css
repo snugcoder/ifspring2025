@@ -75,8 +75,7 @@ html {
 }
 
 header {
-    /* background-color: rgba(255, 228, 196, 0.52); 
-    \\*/
+    /* background-color: rgba(255, 228, 196, 0.52);  */
     background-image: url('../images/skyview.jpg');
     padding: 166px 0 188px 0;
 }
@@ -113,7 +112,7 @@ section div.column {
 }
 
 section#intro {
-    background-color: rgba(245, 206, 148, 0.374);
+    background-color: rgb(245, 206, 148);
     padding-bottom: 2.46rem;
 }
 
@@ -136,7 +135,7 @@ section#intro p {
 }
 
 section#photo-gallery {
-    background-color: rgba(165, 42, 42, 0.598);
+    background-color: rgb(165, 42, 42);
     padding-bottom: 4rem;
 }
 
@@ -176,7 +175,7 @@ section#photo-gallery .photo-card p{
 }
 
 section#paragraph{
-    background-color: rgba(255, 235, 205, 0.562);
+    background-color: rgb(102, 150, 148);
     padding-bottom: 6.3rem;
 }
 
