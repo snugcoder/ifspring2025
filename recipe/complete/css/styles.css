@@ -1,143 +1,209 @@
 /* css reset - josh comeau*/
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    /* display: block; */
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  /* display: block; */
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
     9. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-
-
-html{
-    padding: 2rem;
-    background-image: url(../images/gingham\ bg.jpg);
-    /* background-color: #d0322c6f; */
-}
-header h1{
-    padding-top: 2rem;
-    font-family: "Playwrite FR Trad", cursive;
-    color: #d0322c;
-}
-header .header{
-  /* border-bottom: 1px solid rgb(41, 101, 93); */
-  width: 560px;
-}
-header .header h3{
-    font-weight: 200;
-    padding-left: 3rem;
+#root,
+#__next {
+  isolation: isolate;
 }
 
-header .sub_heading{
+
+html {
+  padding: 2rem;
+  background-image: url(../images/gingham\ bg.jpg);
+  /* background-color: #d0322c6f; */
+}
+
+header h1 {
+  padding-top: 2rem;
+  font-family: "Playwrite FR Trad", cursive;
+  color: #d0322c;
+}
+
+header .header h3 {
+  font-weight: 200;
+  padding-left: 3rem;
+}
+
+header .sub_heading {
   display: flex;
   flex-direction: row;
   gap: 2rem;
- }
+}
 
- header .time_icon, .serving_icon{
+header .time_icon,
+.serving_icon {
   display: flex;
   gap: .6rem;
   padding-top: 1rem;
- }
+}
 
- header .time_icon{
+header .time_icon {
   padding-right: 1.5rem;
-  /* border-right: 1px solid rgb(41, 101, 93); */
- }
+}
 
- header .fa-solid{
+header .fa-solid {
   padding-top: 5px;
- }
+}
 
-header .caption{
+header .caption {
   display: flex;
   padding: 0 19rem 0 0rem;
 
 }
 
-body{
-    font-family: "DM Sans", sans-serif;
-    max-width: 90%;
-    width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 30px;
-    padding: 2rem;
+body {
+  font-family: "DM Sans", sans-serif;
+  max-width: 90%;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2rem;
 
 }
 
-section.ingredient-list td{
+section.ingredient-list td {
   padding-right: 10px;
 }
 
-section.recipe img{
+section.recipe img {
   border-radius: 1.5rem;
   width: 300px;
   height: auto;
 }
 
-section.recipe .step_1, section.recipe .step_2, section.recipe .step_3, section.recipe .step_4{
+section.recipe .step_1,
+section.recipe .step_2,
+section.recipe .step_3,
+section.recipe .step_4 {
   display: flex;
   gap: 1rem;
   padding: 2rem;
 }
 
+section.recipe .finished {
+  padding: 2rem;
+}
 
-@media (max-width: 918px){
-  header .sub_heading{
+
+
+@media (max-width: 918px) {
+  header .sub_heading {
     display: block;
   }
-  header .caption{
+
+  header .caption {
     display: block;
-    padding: 0 5rem 0 0rem;
+    padding: 0 3rem 0 0rem;
   }
 }
 
 @media (max-width: 1057px) {
 
-   section.recipe .step_1, section.recipe .step_2, section.recipe .step_3, section.recipe .step_4{
+  section.recipe .step_1,
+  section.recipe .step_2,
+  section.recipe .step_3,
+  section.recipe .step_4,
+  section.recipe .finished {
     display: block;
     align-items: center;
-   }
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  header .caption {
+    padding: 0;
+    text-align: center;
+  }
+
+  h2,
+  .recipe h4 {
+    text-align: center;
+  }
+
+  header .sub_heading {
+    padding: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 400px){
+  header h1{
+    font-size: 1.5rem;
+  }
+  header h3{
+    font-size: 1rem;
+  }
+  header .header h3{
+    padding-left: 1rem;
+  }
+  header .sub_heading {
+    padding: 0 0 0 30px;
+  }
 }
