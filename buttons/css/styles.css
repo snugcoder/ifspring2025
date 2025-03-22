@@ -1,0 +1,95 @@
+/* the color run btn styling */
+/* slide hover effect: https://codepen.io/RazorXio/pen/gMaoOW */
+/* text gradient generator: https://www.cssportal.com/css-text-gradient-generator/ */
+
+a#colorrun-btn {
+    text-decoration: none;
+    position: relative;
+    top: 40%;
+    color: white;
+    padding: 15px 30px;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    transition: ease-out 0.7s;
+    box-shadow: inset 0 0 0 0 black;
+    display: inline-block;
+
+}
+
+
+a#colorrun-btn:hover {
+    box-shadow: inset 0 100px 0 0 transparent;
+    color: black;
+    /* background: ; */
+    background: linear-gradient(to right, #CF4618 0%, #FF2F86 29%, #DDCB03 56%, #539BFF 80%, #CF20C6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+a#moo-btn {
+    text-decoration: none;
+    position: relative;
+    top: 45%;
+    color: white;
+    padding: 15px 30px;
+    background-color: #00ac73;
+    border-radius: 5px;
+    transition: ease-out 0.7s;
+}
+
+a#moo-btn img{
+    display: none;
+}
+
+
+a#moo-btn:hover{
+    background-color: #027951;
+    box-shadow: inset 400px 50px 0 0 #ffffff;
+
+}
+
+a#mollyjogger-btn {
+    text-decoration: none;
+    position: relative;
+    top: 45%;
+    color: #a8a476;
+    padding: 15px 30px;
+    background-color: #3b441a;
+    font-family: "La Belle Aurore", cursive;
+    border: 3px solid #a8a476;
+    border-radius: 3px;
+    transition: ease-out 0.4s;
+}
+
+a#mollyjogger-btn:hover{
+    box-shadow: 0 0 10px #a8a476;
+    color: #b3b08f;
+    border: 3px solid #b3b08f;
+}
+
+a#newyorker-btn {
+    text-decoration: none;
+    text-decoration: none;
+    position: relative;
+    top: 45%;
+    color: black;
+    padding: 15px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+}
+
+a#pasteria-btn {
+    text-decoration: none;
+    text-decoration: none;
+    text-decoration: none;
+    position: relative;
+    top: 45%;
+    color: #064047;
+    padding: 15px 30px;
+    font-family: "Oswald", sans-serif;
+    border: 2px solid #064047;
+}
+
+a#pasteria-btn:hover {}
