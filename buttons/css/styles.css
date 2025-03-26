@@ -77,7 +77,6 @@ a#newyorker-btn {
     right: 30px;
     color: black;
     padding: 50px 50px;
-    transition: ease-out 0.7s;
     /* font-family: 'Times New Roman', Times, serif; */
     /* border: 2px solid black; */
 }
@@ -85,19 +84,24 @@ a#newyorker-btn {
 a#newyorker-btn img#newyorker_man{
     width: 40%;
     position: relative;
-    left: 10px;
+    left: 24px;
 }
 
  img#newyorker_logo{
     display:none;
     width: 80%;
     position: relative;
-    left: 35px;
+    right: 5px;
+    top:75px;
 }
 
-a#newyorker-btn:hover + img#newyorker_logo {
-    display:block;
+a#newyorker-btn:hover #newyorker_logo {
+    display:inline;
+    position: absolute;
+    transition: ease-out 0.7s;
+
 }
+
 a#pasteria-btn {
     text-decoration: none;
     display: inline-block;
