@@ -1,0 +1,73 @@
+
+img{
+    margin: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    
+}
+h1{
+    font-family: "Chelsea Market", system-ui;
+}
+
+
+/* styling navbar */
+nav{
+    background-color: rgba(252, 218, 218, 0.29);
+    /* background-color: rgb(160 38 38 / 59%); */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+nav .left-side a img{
+    position: absolute;
+    top: 0;
+}
+
+nav .right-side a:active{
+    background-color: brown;
+}
+
+nav .right-side a{
+    position: relative;
+    top: 0;
+    background-color: rgb(252, 218, 218);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: .5px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: white;
+}
+
+/* styling index.html*/
+section.intro h1{
+    font-size: 5rem;
+}
+div.intro-section{
+    text-align: center;
+}
+
+section.intro-text{
+    padding: 0 1rem 0 0;
+}
+
+
+footer{
+    background-color: rgb(252, 218, 218);
+    padding: 30px 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
