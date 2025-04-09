@@ -28,6 +28,7 @@ nav{
     top: 0;
     width: 100%;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 nav .left-side a img{
@@ -65,9 +66,37 @@ section.intro-text{
 
 footer{
     background-color: rgb(252, 218, 218);
-    padding: 30px 30px;
+    padding: 1px 30px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* history.html styling */
+
+section.timeline{
+    margin-top: 7rem;
+}
+
+/* brand-culture.html styling */
+section.brand-culture-intro{
+    margin-top: 7rem;
+}
+
+/* social-lift.html styling */
+section.social-life{
+    margin-top: 7rem;
+}
+
+/* types-of-boba.html styling */
+section.types-intro{
+    margin-top: 7rem;
+}
+
+div.type-img-box img{
+    background-color: pink;
+    padding: 30px 60px;
+    border-radius: 30px;
+
 }
