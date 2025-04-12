@@ -32,6 +32,10 @@ nav {
     z-index: 1;
 }
 
+nav .right-side{
+    padding-right: 58px;
+}
+
 nav .left-side a img {
     position: absolute;
     top: 0;
@@ -45,11 +49,13 @@ nav .right-side a {
     position: relative;
     top: 0;
     background-color: rgb(250, 184, 184);
-    padding: 10px 30px;
+    padding: 10px 15px;
     border-radius: 30px;
-    box-shadow: .5px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: .5px 4px rgba(164, 61, 61, 0.31);
     text-decoration: none;
-    color: white;
+    color:#983C3C;
+    font-size: 13px;
+    font-family: "Chelsea Market", system-ui;
 }
 
 /* styling index.html*/
@@ -165,6 +171,28 @@ section.brand-culture-intro, section.coco-tea-content, section.the-valley-conten
 /* social-lift.html styling */
 section.social-life {
     margin-top: 7rem;
+    /* this may not be a permanent fix */
+    margin-left: 50px;
+    margin-bottom: 5rem;
+}
+
+section.social-life .content .top {
+    display: flex;
+    gap: 5rem;
+}
+
+section.social-life .content .bottom{
+    display: flex;
+    gap: 5rem;
+}
+
+section.social-life .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.social-life .content .top p{
+    width: 400px;
 }
 
 /* types-of-boba.html styling */
