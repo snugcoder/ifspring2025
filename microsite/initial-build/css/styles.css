@@ -1,8 +1,8 @@
-
-img{
+img {
     margin: 0;
 }
-body{
+
+body {
     font-family: "DM Sans", sans-serif;
     width: 950px;
     margin-left: auto;
@@ -10,16 +10,17 @@ body{
     padding: 1rem;
     padding-top: 1rem;
     text-align: center;
-    
+    flex-wrap: wrap;
 }
-h1{
+
+h1 {
     font-family: "Chelsea Market", system-ui;
 }
 
 
 /* styling navbar */
-nav{
-    background-color: rgba(252, 218, 218, 0.29);
+nav {
+    background-color: rgb(252, 218, 218);
     /* background-color: rgb(160 38 38 / 59%); */
     display: flex;
     justify-content: space-between;
@@ -27,23 +28,23 @@ nav{
     left: 0;
     top: 0;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1.5rem;
+    z-index: 1;
 }
 
-nav .left-side a img{
+nav .left-side a img {
     position: absolute;
     top: 0;
 }
 
-nav .right-side a:active{
+nav .right-side a:active {
     background-color: brown;
 }
 
-nav .right-side a{
+nav .right-side a {
     position: relative;
     top: 0;
-    background-color: rgb(252, 218, 218);
+    background-color: rgb(250, 184, 184);
     padding: 10px 30px;
     border-radius: 30px;
     box-shadow: .5px 4px rgba(0, 0, 0, 0.25);
@@ -52,19 +53,20 @@ nav .right-side a{
 }
 
 /* styling index.html*/
-section.intro h1{
+section.intro h1 {
     font-size: 5rem;
 }
-div.intro-section{
+
+div.intro-section {
     text-align: center;
 }
 
-section.intro-text{
+section.intro-text {
     padding: 0 1rem 0 0;
 }
 
 
-footer{
+footer {
     background-color: rgb(252, 218, 218);
     padding: 1px 30px;
     position: fixed;
@@ -75,28 +77,123 @@ footer{
 
 /* history.html styling */
 
-section.timeline{
+section.timeline-container {
     margin-top: 7rem;
+    margin-bottom: 4rem;
 }
 
+section.timeline-container .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section.timeline-container .timeline .callout{
+    position: relative;
+    z-index: 1;
+}
+section.timeline-container .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(252, 218, 218);
+    ;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+section.timeline-container .timeline .timeline-left,
+section.timeline-container .timeline .timeline-right {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+
+}
+
+section.timeline-container .timeline .left {
+    left: -80px;
+}
+
+
+section.timeline-container .timeline .content {
+    padding: 20px 30px;
+    background-color:rgba(252, 218, 218, 0.605);
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+}
+section.timeline-container .timeline .content img{
+    /* width: 100px; */
+
+}
+section.timeline-container .timeline .content p{
+    font-size: 12px;
+}
+section.timeline-container .timeline .right {
+    left: 50%;
+}
+
+
+/* section.timeline-container .timeline .content{
+    display: flex;
+} */
+
+
+
+
 /* brand-culture.html styling */
-section.brand-culture-intro{
+.brand-culture-container{
     margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.brand-culture-intro, section.coco-tea-content, section.the-valley-content, section.the-boba-guys-content, section.tp-tea-content {
+    background-color: rgba(252, 218, 218, 0.605);
+    padding: 35px 30px;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* social-lift.html styling */
-section.social-life{
+section.social-life {
     margin-top: 7rem;
 }
 
 /* types-of-boba.html styling */
-section.types-intro{
+section.types-intro {
     margin-top: 7rem;
 }
 
-div.type-img-box img{
+div.type-img-box img {
     background-color: pink;
     padding: 30px 60px;
     border-radius: 30px;
 
+}
+
+/* responsiveness */
+@media screen and (max-width: 600px) {
+
+    /* for history.html - move the timeline to the left */
+    /* section.timeline-container .timeline::after {
+        left: 31px;
+    }
+
+    section.timeline-container .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    section.timeline-container .timeline.right {
+        left: 0%;
+    } */
 }
