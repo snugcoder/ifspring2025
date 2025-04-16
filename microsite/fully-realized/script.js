@@ -62,4 +62,12 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-  
+// responsive nav
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "right-side") {
+      x.className += " responsive";
+    } else {
+      x.className = "right-side";
+    }
+  }
