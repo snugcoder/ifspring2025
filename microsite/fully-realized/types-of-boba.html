@@ -28,70 +28,71 @@
             </div>
         </nav>
     </header>
+    <div class="body-bg">
         <section class="types-intro">
             <h1>Types and Variation</h1>
             <p>Select a boba drink below or select a type to get started</p>
         </section>
         <section class="type-content">
             <div class="type-buttons">
-                <button type="button">Black Tea</button>
-                <button type="button">Green Tea</button>
-                <button type="button">Fruit Tea</button>
-                <button type="button">Oolong Tea</button>
-                <button type="button">Milk Tea</button>
-                <button type="button">White Tea</button>
+                <button type="button" class="btn active" onclick="filterSelection('all')">All Teas</button>
+                <button type="button" class="btn" onclick="filterSelection('black')">Black Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('green')">Green Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('fruit')">Fruit Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('milk')">Milk Tea</button>
             </div>
             <div class="type-img">
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba1.png" alt="boba tea image" width="200">
                     <p>Brown Sugar Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba2.png" alt="boba tea image" width="200">
                     <p>Coconut Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba3.png" alt="boba tea image" width="200">
                     <p>Cheese Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba4.png" alt="boba tea image" width="200">
                     <p>Classic Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba5.png" alt="boba tea image" width="200">
                     <p>Jasmine Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv fruit">
                     <img src="images/boba-types/boba6.png" alt="boba tea image" width="200">
                     <p>Strawberry Fruit Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv fruit green">
                     <img src="images/boba-types/boba7.png" alt="boba tea image" width="200">
                     <p>Honeydew Fruit Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk fruit">
                     <img src="images/boba-types/boba8.png" alt="boba tea image" width="200">
                     <p>Strawberry Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk green">
                     <img src="images/boba-types/boba9.png" alt="boba tea image" width="200">
                     <p>Matcha Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk fruit">
                     <img src="images/boba-types/boba10.png" alt="boba tea image" width="200">
                     <p>Peach Milk Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk">
                     <img src="images/boba-types/boba11.png" alt="boba tea image" width="200">
                     <p>Thai Iced Tea</p>
                 </div>
-                <div class="type-img-box">
+                <div class="type-img-box filterDiv milk black">
                     <img src="images/boba-types/boba12.png" alt="boba tea image" width="200">
                     <p>Taro Milk Tea</p>
                 </div>
             </div>
         </section>
+    </div>
     <footer>
         <p>&copy; Designed by Adejola Ogunsan Interaction Foundations Spring 2025</p>
     </footer>
