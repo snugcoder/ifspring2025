@@ -1,17 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll("nav .right-side a");
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("nav .right-side a");
+  const currentPage = window.location.pathname.split("/").pop();
 
-    links.forEach(link => {
-        link.addEventListener("click", function(event) {
-            // Remove active class from all links
-            links.forEach(link => link.classList.remove("active"));
+  links.forEach(link => {
+      const href = link.getAttribute("href");
 
-            // Add active class to the clicked link
-            event.target.classList.add("active");
-        });
-    });
+      // Only apply to real pages, not the icon link
+      if (href === currentPage) {
+          link.classList.add("active");
+      }
+  });
 });
-
 // code from w3schools: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 // Filter elements
 ffilterSelection("all")

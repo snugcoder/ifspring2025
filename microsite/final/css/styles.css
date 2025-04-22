@@ -134,10 +134,6 @@ nav .left-side a img {
     top: 8px;
 }
 
-nav .right-side a:active {
-    background-color: brown;
-}
-
 nav .right-side a {
     position: relative;
     top: 0;
@@ -149,6 +145,11 @@ nav .right-side a {
     color: #983C3C;
     font-size: 13px;
     font-family: "Chelsea Market", system-ui;
+}
+
+nav .right-side a:hover,nav .right-side a.active {
+    background-color:  rgba(218, 95, 95, 0.647);
+    color: rgb(255, 222, 214);
 }
 
 i.fas {
@@ -334,6 +335,9 @@ section.tp-tea-content {
     margin-right: auto;
 }
 
+div.brand-content{
+    text-align: left;
+}
 /* social-life.html styling */
 section.social-life {
     margin: 7rem 1rem 5rem 1rem;
