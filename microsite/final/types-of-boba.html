@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Wikipedia Microsite - Types of Boba</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-side">
+                <a href="index.html"><img
+                    src="images/logo.png"
+                    alt="bubble tea logo" width="50"></a>
+            </div>
+            <!-- make it active with js -->
+            <div class="right-side" id="myTopnav">
+                <a href="history.html">History</a>
+                <a href="brand-culture.html">Brand Culture</a>
+                <a href="social-life.html">Social Life</a>
+                <a href="types-of-boba.html">Types of Boba</a>
+                <a href="sources.html">Sources</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-overlay"></div>
+        <section class="types-intro">
+            <h1>Types and Variation</h1>
+            <p>Select a type to see what boba options are available</p>
+        </section>
+        <section class="type-content">
+            <div class="type-buttons">
+                <button type="button" class="btn active" onclick="filterSelection('all')">All Teas</button>
+                <button type="button" class="btn" onclick="filterSelection('black')">Black Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('green')">Green Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('fruit')">Fruit Tea</button>
+                <button type="button" class="btn" onclick="filterSelection('milk')">Milk Tea</button>
+            </div>
+            <div class="type-img">
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba1.png" alt="boba tea image" width="200">
+                    <p>Brown Sugar Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba2.png" alt="boba tea image" width="200">
+                    <p>Coconut Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba3.png" alt="boba tea image" width="200">
+                    <p>Cheese Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba4.png" alt="boba tea image" width="200">
+                    <p>Classic Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba5.png" alt="boba tea image" width="200">
+                    <p>Jasmine Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv fruit">
+                    <img src="images/boba-types/boba6.png" alt="boba tea image" width="200">
+                    <p>Strawberry Fruit Tea</p>
+                </div>
+                <div class="type-img-box filterDiv fruit green">
+                    <img src="images/boba-types/boba7.png" alt="boba tea image" width="200">
+                    <p>Honeydew Fruit Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk fruit">
+                    <img src="images/boba-types/boba8.png" alt="boba tea image" width="200">
+                    <p>Strawberry Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk green">
+                    <img src="images/boba-types/boba9.png" alt="boba tea image" width="200">
+                    <p>Matcha Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk fruit">
+                    <img src="images/boba-types/boba10.png" alt="boba tea image" width="200">
+                    <p>Peach Milk Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk">
+                    <img src="images/boba-types/boba11.png" alt="boba tea image" width="200">
+                    <p>Thai Iced Tea</p>
+                </div>
+                <div class="type-img-box filterDiv milk black">
+                    <img src="images/boba-types/boba12.png" alt="boba tea image" width="200">
+                    <p>Taro Milk Tea</p>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <p>&copy; Designed by Adejola Ogunsan Interaction Foundations Spring 2025</p>
+    </footer>
+</body>
+
+</html>
